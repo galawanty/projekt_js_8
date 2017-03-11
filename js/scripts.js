@@ -1,10 +1,11 @@
-for (i = 0; i < 10; i++) {
-    var star = '';
-
-    for (n=0; n < i; n++) {
-        star += '*'
+function rysujChoinke(tree) {
+    var star;
+    for (var k = 1 ; k <= tree ; k++) {
+        star = '';
+        for (var n = 0 ; n < k*2-1 ; n++) {
+            star += '*';
+        }
+        console.log(star);     
     }
-
-    console.log(star);
-    i++;
 }
+rysujChoinke(5);
